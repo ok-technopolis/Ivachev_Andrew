@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Список задач</title>
+</head>
+<body>
+<div class="todos-header"> 
+	TODOS
+</div>
+<div class="todos-main">
+<div class="todos-add">
+	<button class="todo-add_select-all" aria-label="Отметить все как выполненные"> Arrow </button>
+	<input class="todo-add_input" placeholder="What needs to be done?" aria-label="Поле добавления todo"/>
+</div>
+<div class="todos-list">
+	<div class="todos-item __ready">
+		<input type="checkbox" checked="checked" class="todo-item_ready-mark" aria-label="Пометить как невыполненное"/>
+		<input value="Узнать про HTML" />
+		<button class="todo-item_remove" aria-label="Удалить todo">X</button>
+	</div>
+	<div class="todos-item">
+		<input type="checkbox" aria-label="Пометить как выполненное"/>
+		<input value="Написать HTML" />
+		<button class="todo-item_remove" aria-label="Удалить todo">X</button>
+	</div>
+	<div class="todos-item">
+		<input type="checkbox" aria-label="Пометить как выполненное"/>
+		<input value="Написать css" />
+		<button class="todo-item_remove" aria-label="Удалить todo">X</button>
+	</div>
+</div>
+<div class="todos-actions-bar">
+	<div class="todos-actions-bar_counter" aria-label="Количество не сделанных todo">
+		2 todo
+	</div>
+	<div class="todos-filters">
+		<button class="todos-filter __active" data-filter="all" aria-label="Фильтр: показать все">
+			Все
+		</button>
+		<button class="todos-filter" data-filter="ready" aria-label="Фильтр: показать невыполненные">
+			Невыполненные
+		</button>
+		<button class="todos-filter __active" data-filter="unready" aria-label="Фильтр: показать выполненные">
+			Выполненные
+		</button>
+	</div>
+	<button class="todos-actions-bar_clear-completed">
+		Удалить завершённые
+	</button>
+</div>
+</div>
+</body>
+</html>
